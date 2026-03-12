@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Har tab ka alag token sessionStorage mein hota hai
 // Yeh instance automatically Authorization header lagata hai
-const baseURL = import.meta.env.VITE_BACKEND_URL || "http://localhost:8081";
+const baseURL = "https://chat-app-backend-cxry.onrender.com";
 const api = axios.create({ baseURL, withCredentials: true });
 
 api.interceptors.request.use((config) => {

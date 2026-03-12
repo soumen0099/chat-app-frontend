@@ -4,7 +4,7 @@ let socket = null;
 
 export const connectSocket = (userId) => {
   if (!socket) {
-    const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:8081";
+    const backendUrl = "https://chat-app-backend-cxry.onrender.com";
     socket = io(backendUrl, {
       query: { userId },
     });
